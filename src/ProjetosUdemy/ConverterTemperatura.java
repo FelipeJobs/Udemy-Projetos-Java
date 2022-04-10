@@ -1,6 +1,7 @@
 package ProjetosUdemy;
 
 import java.text.DecimalFormat;
+
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -16,8 +17,8 @@ public class ConverterTemperatura {
         final double fairh = 1.8;
         final double kelvin = 273.15;
         double temperatura = 0.0;
-    // criei um laço para impedir que o usuário digite uma opção inválida.
-        while (true){
+        // criei um laço para impedir que o usuário digite uma opção inválida.
+        while (true) {
             System.out.print("\33[32mVocê quer converter de:\n" +
                     "1 = Celcius para Kelvin\n" +
                     "2= Kelvin para Celcius\n" +
@@ -26,16 +27,15 @@ public class ConverterTemperatura {
                     "5= Fahrenheit para Kelvin\n" +
                     "6= Kelvin para Fahrenheit\n" +
                     "Escolha: ");
-                escolha = input.nextInt();
-                if(escolha <=0 || escolha >6){
-                    System.out.println("\33[31mEscolha uma opção válida");
-                    TimeUnit.SECONDS.sleep(5);
-                    // usei o time para atrasar um pouco.
-                    System.out.println();
+            escolha = input.nextInt();
+            if (escolha <= 0 || escolha > 6) {
+                System.out.println("\33[31mEscolha uma opção válida");
+                TimeUnit.SECONDS.sleep(5);
+                // usei o time para atrasar um pouco.
+                System.out.println();
+            } else {
+                break;
             }
-                else {
-                    break;
-                }
         }
 
         System.out.println();
@@ -44,7 +44,7 @@ public class ConverterTemperatura {
         // utilizado para controlar as opções válidas.
         switch (escolha) {
             case 1:
-                System.out.println("A temperatura em Kelvin é: " + deci.format (temperatura + kelvin) + "ºC");
+                System.out.println("A temperatura em Kelvin é: " + deci.format(temperatura + kelvin) + "ºC");
                 break;
             case 2:
                 System.out.println("A temperatura em Celcius é: " + deci.format(temperatura - kelvin) + "ºK");
@@ -53,7 +53,7 @@ public class ConverterTemperatura {
                 System.out.println("A temperatura em Fahrenheit é: " + deci.format(temperatura * fairh + 32) + "ºF");
                 break;
             case 4:
-                System.out.println("A temperatura em Celcius é: " + deci.format ((temperatura - 32) / fairh)  + "ºC");
+                System.out.println("A temperatura em Celcius é: " + deci.format((temperatura - 32) / fairh) + "ºC");
                 break;
             case 5:
                 System.out.println("A temperatura em Kelvin é: " + deci.format((temperatura - 32) * 5 / 9 + kelvin) + "ºK");
@@ -62,6 +62,12 @@ public class ConverterTemperatura {
                 System.out.println("A temperatura em Fahrenheit é: " + deci.format((temperatura - kelvin) * fairh + 32) + "ºF");
                 break;
 
+        }
+        input.close();
 
-        }}}
+    }
+
+
+
+}
 
