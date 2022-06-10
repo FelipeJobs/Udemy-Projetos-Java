@@ -1,4 +1,4 @@
-package ProjetosUdemy;
+package ProjetosUdemy.Conversao;
 
 import java.text.DecimalFormat;
 

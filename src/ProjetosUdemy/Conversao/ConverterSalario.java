@@ -1,4 +1,4 @@
-package ProjetosUdemy;
+package ProjetosUdemy.Conversao;
 
 import java.util.Scanner;
 
@@ -23,6 +23,7 @@ public class ConverterSalario {
 
         Double media = Double.valueOf((s1 + s2 + s3))/3;
         System.out.printf("\33[36m\nA média dos três salários é: R$%.2f ", media);
-
+        input.close();
     }
+
 }
