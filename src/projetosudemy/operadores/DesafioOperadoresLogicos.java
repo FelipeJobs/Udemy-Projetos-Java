@@ -1,4 +1,4 @@
-package ProjetosUdemy.Operadores;
+package projetosudemy.operadores;
 
 import java.util.Scanner;
 

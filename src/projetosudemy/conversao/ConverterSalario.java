@@ -1,4 +1,4 @@
-package ProjetosUdemy.Conversao;
+package projetosudemy.conversao;
 
 import java.util.Scanner;
 

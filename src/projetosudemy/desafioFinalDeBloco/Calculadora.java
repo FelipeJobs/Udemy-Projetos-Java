@@ -1,4 +1,4 @@
-package ProjetosUdemy.DesafioFinalDeBloco;
+package projetosudemy.desafioFinalDeBloco;
 
 import java.util.Scanner;
 

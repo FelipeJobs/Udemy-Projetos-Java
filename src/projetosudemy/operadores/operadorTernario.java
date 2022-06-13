@@ -1,4 +1,4 @@
-package ProjetosUdemy.Operadores;
+package projetosudemy.operadores;
 /* Operadores ternário funcionam como um if e else, Condição? se verdadeiro : se falso;
 ou seja antes do interrogação tem a condição, depois do interrogação tem o resultado
 se for verdadeiro e depois dos dois pontos o resultado se for falso
